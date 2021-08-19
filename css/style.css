@@ -145,7 +145,7 @@ header .nav-toggle-label {
   display: grid;
   grid-template-columns: .5fr 7fr .5fr;
   /* grid-template-rows: .5fr 5fr 5fr; */
-  height: 100%;
+  height: auto;
   
 }
 .wrapper{
