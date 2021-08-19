@@ -1,0 +1,146 @@
+*, *::before, *::after{
+    box-sizing: border-box;
+}
+:root{
+    --primary-clr:#441db5;
+}
+body{
+    padding: 0;
+    margin: 0;
+    height: 100%;
+    font-family: sans-serif;
+}
+.create-account{
+    grid-column: 1/2;
+    display: grid;
+    grid-template-columns: 1fr 4fr 1fr;
+    height: 100%;
+}
+.wrapper{
+    grid-column: 2/ 3;
+    margin: 50px 0;
+}
+.profile{
+    display: flex;
+    flex-direction: column;
+
+}
+.name-email-pass{
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    
+}
+.name-email-pass label{
+    margin-bottom: 5px;
+    
+}
+.name-email-pass input{
+    margin-bottom: 20px;
+    height: 45px;
+    border-radius: 5px;
+    border: 1px solid lightgray;
+    font-size: 15px;
+    padding-left: 15px;
+      
+}
+.hide-password-toggle{
+    position: absolute;
+    top: 38%;
+    right: 20;
+}
+
+.hide-password{
+    display: none; 
+}
+
+.agree{
+    display: flex;
+    flex-direction: column;
+}
+.terms{
+    display: flex;
+    line-height: 24px;
+}
+.terms input{
+    height: 100%;
+    margin-right: 6px;
+}
+.agree .create[value]{
+    background-color: var(--primary-clr);
+    margin-top: 30px;
+    height: 55px;
+    border-radius: 5px;
+    border: 1px solid var(--primary-clr);
+    font-size: 15px;
+    font-weight: bold;
+    color: white;
+    transition: 200ms ease-in-out;
+}
+.agree .create[value]:hover{
+    background-color: white;
+    color: var(--primary-clr);
+}
+.agree p{
+    text-align: center;
+}
+.agree p a{
+    text-decoration: none;
+}
+#templates{
+    display: none;
+}
+
+
+@media screen and (min-width: 1027px) {
+    body{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    }
+    #templates{
+        grid-column: 2/ 3;
+        background-color: var(--primary-clr);
+        display: grid;
+        grid-template-columns: 1fr 8fr 1fr;
+    }
+    .paralleled-templates{
+        grid-column: 2/ 3;
+        display: grid;
+        grid-template-rows: 1fr 4fr 2.5fr 1fr;
+    }
+    .paralleled{
+        grid-row: 2/ 3;
+        background-image: url(/Assets/Sign\ Up\ Image.png);
+        background-repeat: no-repeat;
+        background-size: cover;
+        border-radius: 5px;
+        background-position: center;
+    }
+    .template{
+        grid-row: 3/ 4;
+        text-align: center;
+        margin: 0 50px;
+        color: white;
+    }
+    .template p{
+        font-size: 13px;
+        line-height: 20px;
+    }
+    .dot :first-child{
+        background-color:white;
+
+    }
+    .carusel-dot{
+        width: 10px;
+        height: 10px;
+        border-radius: 50%;
+        background-color: rgba(211, 211, 211, 0.521);
+        display: inline-block;
+    }
+
+}
+
+
+
+
+
