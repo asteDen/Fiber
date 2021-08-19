@@ -17,7 +17,7 @@ body {
 /* SECTION1 HEADER AND NAV ***********************/
 #section-one {
   background-color: var(--bg-background);
-  height: 100vh;
+  height: auto;
   width: 100%;
 }
 
